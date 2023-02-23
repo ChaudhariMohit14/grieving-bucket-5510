@@ -21,14 +21,15 @@
 
         #logo{
             display: flex;
+            flex-direction: column;
             align-items: center;
             /* width: 350px; */
-            height: 200px;
+            height: 150px;
             /* border: 2px solid red; */
         }
         #logo>img{
             /* width: 50%; */
-            height: 100%;
+            height: 80%;
             /* border: 3px solid black; */
         }
         #navigationbtn{
@@ -39,7 +40,7 @@
             justify-content: space-between;
             font-size: 22px;
             margin-top: 20px;
-            margin-left: 1050px;
+            margin-left: 1250px;
         }
         #navigationbtn a{
             color: white;
@@ -136,12 +137,12 @@
 
         #ad{
             margin-top: 10px;
-            width: 65%;
+            width: 85%;
             margin: auto;
         }
         #ad >img{
             width: 100%;
-            height: 400px;
+            /* height: 400px; */
         }
         #fourcard{
             display: flex;
@@ -152,6 +153,111 @@
             justify-content: space-between;
             /* border: 1px solid blue; */
         }
+        #partnership{
+            margin-top: 30px;
+            /* border: 1px solid red; */
+            height: 625px;
+        }
+        #partnercard{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 20px;
+            width: 100%;
+            height: 500px;
+            /* border: 5px solid red; */
+        }
+        #partnercard>div{
+            /* border: 6px solid green; */
+            height: 500px;
+        }
+        #partnercard>div>h4{
+            color: rgb(255, 102, 0);
+        }
+        #partnercard>div>img{
+            width: 100%;
+            height: 80%;
+        }
+        #sliding-ad{
+            margin-top: 30px;
+            width: 100%;
+        }
+        #sliding-ad>img{
+            width: 100%;
+        }
+        #bestplacecard{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px 30px;
+            /* border: 2px solid red; */
+        }
+        #bestplacecard>div>img{
+            width: 100%;
+            height: 300px;
+            border-radius: 3%;
+        }
+        span{
+            color: rgb(16, 133, 250);
+        }
+        #sikkimad>img{
+            width: 100%;
+            border-radius: 1%;
+        }
+        #sikkim{
+            margin-top: 50px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px 30px;
+        }
+        #sikkim>div>img{
+            width: 100%;
+            height: 300px;
+        }
+        /* .........................................Upper Body of 7 Elements(Before Booking Part) End......................... */
+
+        #bookingcard{
+            display: flex;
+            gap: 30px;          
+        }
+        #bookingcard>div>img{
+            width: 100%;
+        }
+        .location{
+            display: flex;
+            justify-content: space-between;
+        }
+        .location :first-child{
+            font-weight: bolder;
+            color: #00796B;
+        }
+        .location :last-child{
+            padding: 5px 7px 5px 7px;
+            border-radius: 30%;
+            color: white;
+            background-color: #00796B;
+        }
+        .price{
+            display: flex;
+            justify-content: space-between;
+        }
+        .price :last-child{
+            color:  #00796B;
+            text-decoration: none;
+            font-size: 22px;
+            height: 30px;
+            border: 1px solid #00796B ;
+        }
+        .verified{
+            display: flex;
+            align-items: center;
+        }
+        .verified>img{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+
+
 
     </style>
 </head>
@@ -159,7 +265,7 @@
     <div id="navbar">
         <div id="uppertasks">
             <div id="logo">
-                <img src="./images/Logo.png" alt="LogoError">
+                <img src="./images/World_Explorer 1.png" alt="LogoError">
                 <h1>World Explorer</h1>
             </div>
             <div id="navigationbtn">
@@ -197,7 +303,7 @@
         
         <div id="searchbar">
             <h1>India's Largest Community of Travellers</h1>
-            <input type="text" placeholder="Search for itineraries, destinations, hotels or activity">
+            <input type="text" placeholder="Search for itineraries, destinations, hotels or activities">
         </div>
 
     </div>
@@ -211,6 +317,175 @@
             <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192307_cc.png" alt="Error"></div>
             <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192273_bb.png" alt="Error"></div>
             <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/311219/Image/1657192344_dd.png" alt="Error"></div>
+        </div>
+        <div id="partnership">
+            <h1>In the Spotlight: Partnerships</h1>
+            <div id="partnercard">
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1672226023_2022_uss_gru_and_the_minions_family.jpg" alt="Error">
+                    <h4>RESORTS WORLD SENTOSA</h4>
+                    <h3>A Fun Family Holiday In Singapore: Swimming with Dolphins, Meeting Minions & Riding Roller Coasters!</h3>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1673440236_carson_arias_7zzloemcauo_unsplash_1.jpg" alt="Error">
+                    <h4>SINGAPORE TOURISM BOARD</h4>
+                    <h3>Visiting Singapore For New Year's Eve or Chinese New Year? Bookmark This Fun Things To Do!</h3>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1672049661_055_outdoorcommonarea_01_min.jpg" alt="Error">
+                    <h4>GOSTOPS</h4>
+                    <h3>Nature's Beauty: Start Your New Year Holidaying At These Festive Winter Destinations With GoSTOPs</h3>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1516992/Image/1671021501_activity_scuba_diving_in_oman_1.jpg" alt="Error">
+                    <h4>OMAN TOURISM</h4>
+                    <h3>Just 3 Hours Away, Oman is The Trending International Destination Every Indian Must Visit!</h3>
+                </div>
+            </div>
+        </div>
+        <div id="sliding-ad">
+            <img src="https://cdn1.tripoto.com/media/filter/nxxl/img/1516992/Image/1670586625_img_0434.jpg" alt="">
+
+        </div>
+        <div id="bestplace">
+            <h1>Find Best Places to Visit in India in February & March</h1>
+            <div id="bestplacecard">
+                <div>
+                    <img src="https://static2.tripoto.com/media/filter/tst/img/192200/TripDocument/1571216585_adrithcollage.jpg" alt="Error">
+                    <h3>Trips To Take With Your Bae This Winter In India</h3>
+                    <p>By <span>Mouna Nanaiah</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1672059071_1667408028_juli_kosolapova_sp5cnbsdhmm_unsplash.jpg" alt="Error">
+                    <h3>There are 11 Long Weekends in 2023: Check'em Out</h3>
+                    <p>By <span>Kanj Saurav</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1672059410_img_20210703_010513.jpg" alt="Error">
+                    <h3>23 Unique Travel Experiences In India For 2023</h3>
+                    <p>By <span>Saumiabee</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674832611_1674800797_1648717670_white_brown_minimalist_my_little_family_photo_collage_3.png" alt="Error">
+                    <h3>Planning To Explore India Between Feb And Mar 2023?</h3>
+                    <p>By <span>Tanisha Mundra</span></p>
+                </div> 
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674832663_1674549251_pexels_shubham_verma_11146084.jpg" alt="Error">
+                    <h3>10 Best Indian Destinations To Explore In February 2023</h3>
+                    <p>By <span>Khyati Maloo</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/gen/2215463/Image/1674833065_1673056447_w_goa_3_png.webp" alt="Error">
+                    <h3>Go On A Romantic Getaway On This Valentine's Day!</h3>
+                    <p>By <span>Kadambari Bhatte (curlytravelmess)</span></p>
+                </div>
+                <div>
+                    <img src="https://static2.tripoto.com/media/filter/tst/img/39685/Image/1673243211_aayushmaan_sharma_oyvov12isya_unsplash.jpg" alt="Error">
+                    <h3>6 Best Places To Escape The Valentine's Day Crowd</h3>
+                    <p>By <span>Kanj Saurav</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674834266_abhinav_srivastava_z5p82kii8_s_unsplash.jpg" alt="Error">
+                    <h3>13 Best Places To Visit In India In March</h3>
+                    <p>By <span>Bongyatri - Sourav and Anindita</span></p>
+                </div>
+            </div>           
+        </div>
+        <div id="sikkimad">
+            <img src="https://cdn1.tripoto.com/media/filter/nxxl/img/2215463/Image/1674834470_sikkim.jpg" alt="Error">
+        </div>
+        <div id="sikkim">
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674834575_1658391510_img_7519.jpg" alt="Error">
+                <h3>Bagdogra To Gangtok: Here's How To Reach Sikkim Capital's City</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674834585_1509614143_1493117955_img_0769.jpg" alt="Error">
+                <h3>The Sikkim Sojourn - Offbeat Things To Do In Sikkim</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674835084_1658689397_abhishek_singh_xjdj4pxkhvu_unsplash.jpg" alt="Error">
+                <h3>15 Best Places To Visit In Sikkim That You Can't Skip</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674835513_1634717508_3rd_image.jpg" alt="Error">
+                <h3>Best Hotels In Gangtok Under INR 2000</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674835971_1650444893_lrm_export_6213641292680_20181127_212627265.jpeg" alt="Error">
+                <h3>Plan An Epic 7-Day Road Trip Across North Sikkim</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674836137_1544786425_img_20181206_102620.jpg" alt="Error">
+                <h3>All About Travelling To Yuksom In West Sikkim</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674836169_1503600232_sob_himalayas22_wesphelan.jpg" alt="Error">
+                <h3>10 Perfect Treks In West Sikkim That You Can't Miss
+                </h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674836421_1501835380_18580085_1355406237885709_6541234173900750848_n.jpg" alt="Error">
+                <h3>Kewzing: A Surreal Village In Southern Sikkim</h3>
+            </div>
+
+        </div>
+        <div id="booking">
+            <h1>Exclusively Curated: Tripoto's Mindful Retreats</h1>
+            <div id="bookingcard">
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1676357737_image_cover_b_4.jpg" alt="Error">
+                    <h3>Go Birding, Biking & Hiking While Enjoying The Luxurious Vibes At This One-Of-A-Kind Boutique Estate</h3>
+                    <div class="location">
+                        <h3>Uttarakhand</h3>
+                        <h4> 3D - 2N</h4>
+                    </div>
+                    <div class="price">
+                        <h3>₹ 12,215 /person</h3>
+                        <a href="#">Book Now</a>
+                    </div>
+                    <div class="verified">
+                        <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" alt="Error">
+                        <h4>Tripoto's Mindful Retreats</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
+                    </div>                  
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1662966110_image_cover_2.jpg" alt="Error">
+                    <h3>Experience Karaoke & An Open-Air Movie At This Village-Themed Retreat</h3>
+                    <div class="location">
+                        <h3>Himachal Pradesh</h3>
+                        <h4>3D-2N</h4>
+                    </div>
+                    <div class="price">
+                        <h3>₹ 8,500 /person</h3>
+                        <a href="#">Book Now</a>
+                    </div>
+                    <div class="verified">
+                        <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" alt="Error">
+                        <h4>Tripoto's Mindful Retreats</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
+                    </div>  
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2176903/Image/1660316705_image_cover_1.jpg" alt="Error">
+                    <h3>Hike To Gallu Waterfall & Discover The 'Joy of Doing Nothing'</h3>
+                    <div class="location">
+                        <h3>Himachal Pradesh</h3>
+                        <h4>3D-2N</h4>
+                    </div>
+                    <div class="price">
+                        <h3>₹ 7,430 /person</h3>
+                        <a href="#">Book Now</a>
+                    </div>
+                    <div class="verified">
+                        <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" alt="Error">
+                        <h4>Tripoto's Mindful Retreats</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>
