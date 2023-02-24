@@ -9,50 +9,51 @@
 
         /* .......................................Navigation Bar Started.................................................... */
         #navbar{
-            border: 2px solid green;
-            height: 500px;
+            /* border: 2px solid green; */
+            height: 350px;
             color: white;
-            background-image: url(https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg);          
+            background-image: url(https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg);
+            background-size: cover;        
         }
         #uppertasks{
             display: flex;
             padding-left: 20px;
+            /* border: 2px solid blue; */
         }
-
         #logo{
             display: flex;
             flex-direction: column;
             align-items: center;
             /* width: 350px; */
-            height: 150px;
+            height: 120px;
             /* border: 2px solid red; */
         }
         #logo>img{
             /* width: 50%; */
-            height: 80%;
+            height: 70%;
             /* border: 3px solid black; */
         }
         #navigationbtn{
             display: flex;
             /* border: 2px solid greenyellow; */
-            width: 700px;
+            width: 450px;
             height: max-content;
             justify-content: space-between;
-            font-size: 22px;
+            /* font-size: 25px; */
             margin-top: 20px;
-            margin-left: 1250px;
+            margin-left: 825px;
         }
         #navigationbtn a{
+            font-size: 16px;
             color: white;
             text-decoration: none;
 
         }
-
         .inspirationbtn{
             color: white;
             border: none;
             background-color: none;
-            font-size: 22px;
+            font-size: 14px;
             background-color: transparent;
         }
         .inspiration{
@@ -77,12 +78,11 @@
         .inspiration:hover .inspiration-content{
             display: block;
         }
-
         .publishbtn{
             color: white;
             border: none;
             background-color: none;
-            font-size: 22px;
+            font-size: 14px;
             background-color: transparent;
         }
         .publish{
@@ -109,21 +109,22 @@
         }
         #signin{
             /* height: fit-content; */
-            font-size: 22px;
+            font-size: 14px;
             color: white;
             border: none;
             background-color: transparent;
         }
         #searchbar{
             text-align: center;
-            font-size: 27px;
+            font-size: 22px;
+            /* border: 3px solid plum; */
         }
         #searchbar>input{
-            width: 38%;
-            font-size: 27px;
+            width: 45%;
+            font-size: 18px;
             padding-left: 25px;
-            padding-top: 20px;
-            padding-bottom: 20px;
+            padding-top: 12px;
+            padding-bottom: 12px;
         }
         /* .........................................Navigation Bar Ended........................................................ */
 
@@ -134,7 +135,6 @@
             margin: auto;
             /* border: 1px solid red; */
         }
-
         #ad{
             margin-top: 10px;
             width: 85%;
@@ -156,26 +156,26 @@
         #partnership{
             margin-top: 30px;
             /* border: 1px solid red; */
-            height: 625px;
+            height: 400px;
         }
         #partnercard{
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             column-gap: 20px;
             width: 100%;
-            height: 500px;
-            /* border: 5px solid red; */
+            height: 80%;
+            /* border: 5px solid blue; */
         }
         #partnercard>div{
             /* border: 6px solid green; */
-            height: 500px;
+            height: 350px;
         }
         #partnercard>div>h4{
             color: rgb(255, 102, 0);
         }
         #partnercard>div>img{
             width: 100%;
-            height: 80%;
+            height: 45%;
         }
         #sliding-ad{
             margin-top: 30px;
@@ -192,31 +192,38 @@
         }
         #bestplacecard>div>img{
             width: 100%;
-            height: 300px;
+            height: 180px;
             border-radius: 3%;
         }
         span{
             color: rgb(16, 133, 250);
         }
-        #sikkimad>img{
+        #placead>img{
+            margin-top: 10px;
             width: 100%;
             border-radius: 1%;
         }
-        #sikkim{
+        #place{
             margin-top: 50px;
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             gap: 30px 30px;
+            /* border: 2px solid black; */
         }
-        #sikkim>div>img{
+        #place>div>img{
             width: 100%;
-            height: 300px;
+            height: 180px;
+            border-radius: 3%;
         }
         /* .........................................Upper Body of 7 Elements(Before Booking Part) End......................... */
 
+        /* ..............................................1st Booking Part Start............................................... */
+
         #bookingcard{
             display: flex;
-            gap: 30px;          
+            gap: 30px; 
+            height: max-content;
+            border: 2px solid red;         
         }
         #bookingcard>div>img{
             width: 100%;
@@ -224,6 +231,9 @@
         .location{
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            height: 32px;
+            /* border: 2px solid red; */
         }
         .location :first-child{
             font-weight: bolder;
@@ -238,35 +248,53 @@
         .price{
             display: flex;
             justify-content: space-between;
+            align-items: center;
+            /* border: 2px solid green; */
+            height: 34px;
         }
         .price :last-child{
+            padding-left: 10px;
+            padding-right: 10px;
             color:  #00796B;
             text-decoration: none;
-            font-size: 22px;
-            height: 30px;
+            align-items: center;
+            font-size: 18px;
+            height: 22px;
             border: 1px solid #00796B ;
         }
         .verified{
             display: flex;
             align-items: center;
+            /* border: 2px solid blue; */
         }
         .verified>img{
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
         }
+        /* ..............................................1st Booking Part End............................................... */
+        /* .............................................After 2nd Booking Start............................................. */
+        #creator{
+            width: 100%;
+            
+        }
+        #creatorcard{
+            display: flex;
+            gap: 25px;
 
-
-
-
+        }
+        #creatorcard>div>img{
+            width: 100%;
+            border-radius: 2%;
+        }
     </style>
 </head>
 <body>
     <div id="navbar">
         <div id="uppertasks">
             <div id="logo">
-                <img src="./images/World_Explorer 1.png" alt="LogoError">
-                <h1>World Explorer</h1>
+                <img src="./images/World_Explorer.png" alt="LogoError">
+                <h2>World Explorer</h2>
             </div>
             <div id="navigationbtn">
                 <div class="inspiration">
@@ -299,13 +327,11 @@
                 </div>
                 <button id="signin">Sign in</button>            
             </div>
-        </div>
-        
+        </div>     
         <div id="searchbar">
             <h1>India's Largest Community of Travellers</h1>
             <input type="text" placeholder="Search for itineraries, destinations, hotels or activities">
         </div>
-
     </div>
     <div id="body">
         <div id="ad">
@@ -392,10 +418,10 @@
                 </div>
             </div>           
         </div>
-        <div id="sikkimad">
+        <div id="placead">
             <img src="https://cdn1.tripoto.com/media/filter/nxxl/img/2215463/Image/1674834470_sikkim.jpg" alt="Error">
         </div>
-        <div id="sikkim">
+        <div id="place">
             <div>
                 <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674834575_1658391510_img_7519.jpg" alt="Error">
                 <h3>Bagdogra To Gangtok: Here's How To Reach Sikkim Capital's City</h3>
@@ -422,8 +448,7 @@
             </div>
             <div>
                 <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674836169_1503600232_sob_himalayas22_wesphelan.jpg" alt="Error">
-                <h3>10 Perfect Treks In West Sikkim That You Can't Miss
-                </h3>
+                <h3>10 Perfect Treks In West Sikkim That You Can't Miss</h3>
             </div>
             <div>
                 <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674836421_1501835380_18580085_1355406237885709_6541234173900750848_n.jpg" alt="Error">
@@ -439,7 +464,7 @@
                     <h3>Go Birding, Biking & Hiking While Enjoying The Luxurious Vibes At This One-Of-A-Kind Boutique Estate</h3>
                     <div class="location">
                         <h3>Uttarakhand</h3>
-                        <h4> 3D - 2N</h4>
+                        <h4> 3D-2N</h4>
                     </div>
                     <div class="price">
                         <h3>₹ 12,215 /person</h3>
@@ -485,6 +510,172 @@
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
                     </div>
                 </div>
+            </div>
+        </div>
+        <div id="bestplace">
+            <h1>Plan You Next International Trip During February & March</h1>
+            <div id="bestplacecard">
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1658863969_1493707507_15798144758_5a93457ae4_o.jpg" alt="Error">
+                    <h3>Add These Offbeat Places In Europe To Your List</h3>
+                    <p>By <span>Sumedha Bharpilania</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1651046452_1545558276_erdap_2129568_1280.jpg" alt="Error">
+                    <h3>You Can Travel To Serbia From India Without A Visa</h3>
+                    <p>By <span>Ayushee Chaudhary</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1664284174_1638860409_photo_1459600661907_3c72c54955de.jpeg" alt="Error">
+                    <h3>The Ultimate Guide For Your Next Trip To Dubai</h3>
+                    <p>By <span>Tripoto</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666951409_1654136098_chinatown_mural_art.jpg" alt="Error">
+                    <h3>Travel To Singapore & Soak In The Sunshine</h3>
+                    <p>By <span>Kadambari Bhatte (curlytravelmess)</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674836691_1534166080_things_to_do_in_maldives.jpg" alt="Error">
+                    <h3>14-Day Itinerary To Explore The Best Of Maldives</h3>
+                    <p>By <span>Ragini Mehra</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1666952031_1637516919_img_8593.jpg" alt="Error">
+                    <h3>A Solo Traveller's Guide To Explore Egypt</h3>
+                    <p>By <span>Karishma Shaikh</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1672059867_1653186336_399a522f_3698_454a_809b_a169bb1efd7d.jpg" alt="Error">
+                    <h3>Start Your Year With A Trip To Bali: A Complete Guide</h3>
+                    <p>By <span>Kadambari Bhatte (curlytravelmess)</span></p>
+                </div>
+                <div>
+                    <img src="https://static2.tripoto.com/media/filter/tst/img/615521/TripDocument/1530383164_cover.jpg" alt="Error">
+                    <h3>A 5-Day Itinerary To Thailand - Bangkok & Phuket</h3>
+                    <p>By <span>Husein Haveliwala</span></p>
+                </div>
+
+            </div>          
+        </div>
+        <div id="placead">
+            <img src="https://cdn1.tripoto.com/media/filter/nxxl/img/2215463/Image/1674837121_thailand.jpg" alt="Error">
+        </div>
+        <div id="place">
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674837182_1481789736_28292851594_869a1faed1_z.jpg" alt="Error">
+                <h3>Everything You Need To Know For An Amazing Trip To Thailand!</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674837211_1529285265_dsc00334.jpg" alt="Error">
+                <h3>The Ultimate Guide To Exploring The Best Of Phuket In 48 Hours</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674837239_1583812856_img_3794.jpg" alt="Error">
+                <h3>Jaw Dropping Temples Of Chiang Mai, Northern Thailand</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674837286_1557915092_1.jpg" alt="Error">
+                <h3>15 Thai Foods You Must Try | What To Eat In Thailand</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674837331_1526273961_thaitrains1.jpg" alt="Error">
+                <h3>Spectacular And Intriguing Train Journeys In Thailand</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674837378_1517404471_1517401852_9044929249_d4b9b281db_o.jpg" alt="Error">
+                <h3>5 Fantastic National Parks To Visit In Thrilling Thailand</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674837432_1496117448_6715357_orig.jpg" alt="Error">
+                <h3>7 Pristine Beaches In Thailand For Your Perfect Vacay</h3>
+            </div>
+            <div>
+                <img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1674837511_1516188383_sms_amphawa01.jpg" alt="Error">
+                <h3>5 Floating Markets Of Bangkok</h3>
+            </div>
+        </div>
+        <div id="booking">
+            <h1>Book These Amazing Tour Packages Curated For You</h1>
+            <div id="bookingcard">
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1565782355_kerala_app.jpg" alt="Error">
+                    <h3>Kerala Packages</h3>
+                    <div class="location">
+                        <h3>Kerala</h3>
+                        <h4> 4D-3N</h4>
+                    </div>
+                    <div class="price">
+                        <h3>₹ 13,000 onwards</h3>
+                        <a href="#">Get Quotes</a>
+                    </div>
+                    <div class="verified">
+                        <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" alt="Error">
+                        <h5>Tripoto's Mindful Retreats</h5>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
+                    </div>                  
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/454712/Image/1578895208_web_maldives.jpg" alt="Error">
+                    <h3>Maldives Holiday Packages</h3>
+                    <div class="location">
+                        <h3>Maldives</h3>
+                        <h4>4D-3N</h4>
+                    </div>
+                    <div class="price">
+                        <h3>₹ 85,000 onwards</h3>
+                        <a href="#">Get Quotes </a>
+                    </div>
+                    <div class="verified">
+                        <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" alt="Error">
+                        <h5>Tripoto's Mindful Retreats</h5>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
+                    </div>  
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567083461_dubai_app.jpg" alt="Error">
+                    <h3>Dubai Packages</h3>
+                    <div class="location">
+                        <h3>Dubai</h3>
+                        <h4>5D-4N</h4>
+                    </div>
+                    <div class="price">
+                        <h3>₹ 28,600 onwards</h3>
+                        <a href="#">Get Quotes </a>
+                    </div>
+                    <div class="verified">
+                        <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" alt="Error">
+                        <h5>Tripoto's Mindful Retreats</h5>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
+                    </div>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/img/1524784/Image/1567494998_andaman_app.jpg" alt="Error">
+                    <h3>Andaman Packages</h3>
+                    <div class="location">
+                        <h3>Andaman</h3>
+                        <h4>5D-4N</h4>
+                    </div>
+                    <div class="price">
+                        <h3>₹ 18,000 onwards</h3>
+                        <a href="#">Get Quotes</a>
+                    </div>
+                    <div class="verified">
+                        <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" alt="Error">
+                        <h5>Tripoto's Mindful Retreats</h5>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="creator">
+            <h1>In the Spotlight: Tripoto Creators of the Month - January 2023</h1>
+            <p>Tripoto Family is a community of travel content creators who create stunning photo blogs, engaging reels and videos as well as informative articles. Here are the most promising creators of the month who shared some amazing hidden gems with us. Kudos to Tripoto's best creators for January 2023.</p>
+            <div id="creatorcard">
+                <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1675676696_1st_card_jan.jpg" alt="Error"></div>
+                <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1675676729_23.jpg" alt="Error"></div>
+                <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1675676748_24.jpg" alt="Error"></div>
+                <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2209673/Image/1676392850_25.jpg" alt="Error"></div>
             </div>
         </div>
     </div>
