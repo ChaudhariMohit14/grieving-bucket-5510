@@ -43,11 +43,13 @@
             margin-top: 20px;
             margin-left: 825px;
         }
-        #navigationbtn a{
+        /* #navigationbtn:hover{
+            cursor: pointer;
+        } */
+        #navigationbtn>a{
             font-size: 16px;
             color: white;
             text-decoration: none;
-
         }
         .inspirationbtn{
             color: white;
@@ -55,6 +57,9 @@
             background-color: none;
             font-size: 14px;
             background-color: transparent;
+        }
+        .inspirationbtn:hover{
+            cursor: pointer;
         }
         .inspiration{
             position: relative;
@@ -69,11 +74,14 @@
         }
         .inspiration-content a{
             color: black;
+            background-color: white;
+            width: 150px;
+            line-height: 38px;
             text-decoration: none;
             display: block;
         }
         .inspiration-content a:hover{
-            background-color: white;
+            background-color: whitesmoke;
         }
         .inspiration:hover .inspiration-content{
             display: block;
@@ -84,6 +92,9 @@
             background-color: none;
             font-size: 14px;
             background-color: transparent;
+        }
+        .publishbtn:hover{
+            cursor: pointer;;
         }
         .publish{
             position: relative;
@@ -97,12 +108,15 @@
             background-color: black;
         }
         .publish-content a{
-            color: black;
+            color:black ;
+            background-color: white;
+            width: 150px;
+            line-height: 38px;
             text-decoration: none;
             display: block;
         }
         .publish-content a:hover{
-            background-color: white;
+            background-color:whitesmoke ;
         }
         .publish:hover .publish-content{
             display: block;
@@ -192,7 +206,7 @@
         }
         #bestplacecard>div>img{
             width: 100%;
-            height: 180px;
+            height: 200px;
             border-radius: 3%;
         }
         span{
@@ -281,12 +295,70 @@
         #creatorcard{
             display: flex;
             gap: 25px;
-
         }
         #creatorcard>div>img{
             width: 100%;
             border-radius: 2%;
         }
+        #destinationcard{
+            width: 100%;
+            display: flex;
+            gap: 25px;
+        }
+        #destinationcard>div>img{
+            width: 100%;
+            border-radius: 2%;
+        }
+        /* .............................................Footer Start........................................................ */
+        #hr1{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        #footer{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 50px;
+        }
+        #fsection1{
+            /* border: 2px solid blue; */
+            margin-left: 25px;
+        }
+        #fsection1>div{
+            display: flex;
+            margin: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            align-items: center;
+            
+        }
+        #fsection1>div>img{
+            width: 30%;
+            /* border: 2px solid green; */
+        }
+        #social{
+            width: 70%;
+            margin: auto;
+            display: block;
+        }
+        #google{
+            margin: auto;
+            display: block;
+            width: 50%;
+            /* border: 2px solid red;         */
+        }
+        #footer>div>h5{
+            color: rgb(59, 59, 59);
+        }
+        #hr2{
+            margin-bottom: 20px;
+        }
+        #copyright{ 
+            width: 15%;
+            /* border: 2px solid red; */
+            margin: auto;
+            margin-bottom: 80px;
+        }
+        /* .............................................Footer End.......................................................... */
     </style>
 </head>
 <body>
@@ -325,7 +397,8 @@
                       <a href="#">Import Blog</a>
                     </div>
                 </div>
-                <button id="signin">Sign in</button>            
+                 
+                <a id="signin" href="#">Sign in</a>           
             </div>
         </div>     
         <div id="searchbar">
@@ -678,6 +751,94 @@
                 <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2209673/Image/1676392850_25.jpg" alt="Error"></div>
             </div>
         </div>
+        <div id="destination">
+            <h1>Plan Your Next Trip Using Tripoto's Complete Destination Guides</h1>
+            <div id="destinationcard">
+                <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/2215463/Image/1669205399_germany.jpeg" alt="Error"></div>
+                <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt="Error"></div>
+                <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/1339961/Image/1613732480_4_4.jpg" alt="Error"></div>
+                <div><img src="https://cdn1.tripoto.com/media/filter/tst/img/1756031/Image/1599216560_kerala.jpg" alt="Error"></div>
+            </div>
+        </div>
+        <div id="bestplace">
+            <h1>Watch Tripoto's Top Travel Vlogs of the Week</h1>
+            <div id="bestplacecard">
+                <div>
+                    <img src="https://image.mux.com/65Mxwlku9ue7VTvDW8F72z1U5VIOiEaz/thumbnail.jpg?width=600&height=600&time=2.0" alt="Error">
+                    <h3>Best Weekend Getaways From Mumbai under 250 kms</h3>
+                    <p>By <span>Namita Mittal</span></p>
+                </div>
+                <div>
+                    <img src="https://cdn1.tripoto.com/media/filter/tst/gen/1789711/Image/1634027797_thumbnail.jpg" alt="Error">
+                    <h3>Narendra Bhawan:Palace Hotel In Bikaner</h3>
+                    <p>By <span>Namita Mittal</span></p>
+                </div>
+                <div>
+                    <img src="https://image.mux.com/iFVXAVPcgtz02Zcmt2ExiBVFZbYw7iMhN/thumbnail.jpg?width=600&height=600&time=3.01" alt="Error">
+                    <h3>5-Day Jaipur Itinerary To See The City Of Maharajas</h3>
+                    <p>By <span>Namita Mittal</span></p>
+                </div>
+                <div>
+                    <img src="https://image.mux.com/VZNhkabs2mLwRfjO6j600Q7OmfLxm5VmV/thumbnail.jpg?width=600&height=600&time=2.0" alt="Error">
+                    <h3>5 Beautiful Places In Delhi That Are Seriously Underrated</h3>
+                    <p>By <span>Namita Mittal</span></p>
+                </div> 
+            </div>           
+        </div>
     </div>
+    <hr id="hr1">
+    <div id="footer">
+        <div id="fsection1">
+            <div>
+                <img src="./images/World_Explorer.png" alt="Error">
+                <h3>World Explorer</h3>
+            </div>
+            <h5>India's Largest Travel Community</h5>
+            <hr>
+            <img id="social" src="./images/social.png" alt="Error">
+            <img id="google" src="./images/google play.png" alt="Error">
+        </div>
+        <div id="fsection2">
+           <h3>About Tripoto</h3>
+           <h5>How It Works</h5>
+           <h5>FAQ's</h5>
+           <h5>Privacy Policy</h5>
+           <h5>Terms & Conditions</h5>
+           <h5>Careers</h5>
+           <h5>Contact Us</h5> 
+        </div>
+        <div id="fsection3">
+            <h3>Products</h3>
+            <h5>Tour Packages</h5>
+            <h5>Travel Guides</h5>
+            <h5>Trips & Itineraries</h5>
+            <h5>Weekend Getaways</h5>
+            <h5>Places to Visit</h5>
+            <h5>Other Travel Categories</h5>
+            <h5>Tripoto Forum</h5>
+            <h5>Honeymoon Packages</h5>
+        </div>
+        <div id="fsection4">
+            <h3>Important Travel Links</h3>
+            <h5>Goa Tourism</h5>
+            <h5>Dubai Tourism</h5>
+            <h5>Singapore Tourism</h5>
+            <h5>Kerala Tourism</h5>
+            <h5>Manali Tourism</h5>
+            <h5>Bali Tourism</h5>
+            <h5>Sri Lanka Tourism</h5>
+            <h5>Honeymoon Destinations In India</h5>
+        </div>
+        <div id="fsection5">
+            <h3>Partner Programs</h3>
+            <h5>Buy Travel Leads</h5>
+            <h5>Partner With Us</h5>
+            <h5>Earn Credits</h5>
+            <h5>Get Paid To Travel</h5>
+            <h5>Import Blog To Itinerary</h5>
+        </div>
+    </div>
+    <hr id="hr2">
+    <h5 id="copyright">© All rights reserved</h5>
 </body>
 </html>
