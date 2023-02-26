@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            background-color: rgb(217, 216, 216);
+        }
+        #login{
+            background-color: white;
+            width: 23%;
+            margin: auto;
+            padding-left: 20px;
+            margin-top: 30px;
+            padding-top: 20px;
+            border: 2px solid rgb(162, 161, 161);
+        }
+        #login>h4{
+            text-align: center;
+        }
+        #fb{
+            border: none;
+            border-radius: 3%;
+            color: white;
+            width: 95%;
+            display: flex;
+            justify-content: space-around;
+            background-color: #4C60B6;
+            align-items: center;
+        }
+        #fb>img{
+            width: 14%;
+            border-radius: 50%;
+        }
+        #google{
+            border: none;
+            border-radius: 3%;
+            color: grey;
+            width: 95%;
+            display: flex;
+            justify-content: space-around;
+            background-color: white;
+            align-items: center;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            margin-top: 10px;
+        }
+        #google>img{
+            width: 14%;
+            border-radius: 50%;
+        }
+        #email{
+            display: block;
+            width: 92%;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        #password{
+            display: block;
+            width: 92%;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        #forgot{
+            display: flex;
+            /* border: 2px solid red; */
+            align-items: center;
+            justify-content: space-between;
+            height: 20px;
+            width: 95%;
+        }
+        #remember{
+            display: flex;
+            /* border: 2px solid green; */
+        }
+        #forgot>a{
+            color: rgb(8, 147, 247);
+            text-decoration: none;
+        }
+        #loginbtn{
+            width: 95%;
+            height: 40px;
+            margin-top: 20px;
+            background-color: rgb(249, 82, 82);
+            border: none;
+            color: white;
+        }
+        #loginbtn:hover{
+            cursor: pointer;
+        }
+        #newuser{
+            display: flex;
+            width: 95%;
+            /* border: 2px solid green; */
+            align-items: center;
+            height: 20px;
+            margin-top: 10px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        #newuser>a{
+            text-decoration: none;
+            color: rgb(8, 147, 247);
+        }
+        button :hover{
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="login">
+        <button id="fb">
+            <img src="./images/fblogo.png" alt="Error">
+            <h2>Log in with Facebook</h2>
+        </button>
+        <button id="google">
+            <img src="./images/google logo.png" alt="Error">
+            <h2>Log in with Google</h2>
+        </button>       
+        <h4>OR</h4>
+        <div id="inputs">
+            <input type="email" id="email" name="email" placeholder="EMAIL" required>
+            <input type="password" id="password" name="password" placeholder="PASSWORD" required minlength="8">
+        </div>
+        <div id="forgot">
+            <div id="remember">
+            <input type="checkbox">
+            <h4>Remember me</h4>
+            </div>
+            <a href="#">Forgot Password?</a>      
+        </div>
+        <button id="loginbtn">LOG IN</button>
+        <div id="newuser">
+            <h4>Don't have an account?</h4>
+            <a href="#">Sign Up</a>
+        </div>
+    </div>   
+</body>
+</html>

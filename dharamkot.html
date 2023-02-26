@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dharamkot</title>
+    <style>
+        /* ........................................Navbar Start........................................................... */
+        #navbar{
+            /* border: 2px solid green; */
+            height: 100px;
+            color: white;
+            background-color: rgb(0, 180, 251);
+            /* background-image: url(https://cdn1.tripoto.com/assets/2.9/img/home_banner_road.jpg);
+            background-size: cover;         */
+        }
+        #uppertasks{
+            display: flex;
+            padding-left: 20px;
+            align-items: center;
+            /* border: 2px solid blue; */
+        }
+        #logo{
+            display: flex;
+            align-items: center;
+            width:300px;
+            height: 80px;
+            /* border: 2px solid red; */
+            margin-top: 10px;
+        }
+        #logo>img{
+            /* width: 50%; */
+            height: 100%;
+            /* border: 3px solid black; */
+        }
+        #logo:hover{
+            cursor: pointer;
+        }
+        #navigationbtn{
+            display: flex;
+            /* border: 2px solid greenyellow; */
+            width: 450px;
+            height: max-content;
+            justify-content: space-between;
+            /* font-size: 25px; */
+            margin-top: 20px;
+            margin-left: 825px;
+            margin-right: 30px;
+        }
+        #navigationbtn>a{
+            font-size: 16px;
+            color: white;
+            text-decoration: none;
+        }
+        .inspirationbtn{
+            color: white;
+            border: none;
+            background-color: none;
+            font-size: 14px;
+            background-color: transparent;
+        }
+        .inspirationbtn:hover{
+            cursor: pointer;
+        }
+        .inspiration{
+            position: relative;
+            display: inline-block;
+        }
+        .inspiration-content{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: black;
+        }
+        .inspiration-content a{
+            color: black;
+            background-color: white;
+            width: 150px;
+            line-height: 38px;
+            text-decoration: none;
+            display: block;
+        }
+        .inspiration-content a:hover{
+            background-color: whitesmoke;
+        }
+        .inspiration:hover .inspiration-content{
+            display: block;
+        }
+        .publishbtn{
+            color: white;
+            border: none;
+            background-color: none;
+            font-size: 14px;
+            background-color: transparent;
+        }
+        .publishbtn:hover{
+            cursor: pointer;;
+        }
+        .publish{
+            position: relative;
+            display: inline-block;
+        }
+        .publish-content{
+            display: none;
+            position: absolute;
+            z-index: 1;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            background-color: black;
+        }
+        .publish-content a{
+            color:black ;
+            background-color: white;
+            width: 150px;
+            line-height: 38px;
+            text-decoration: none;
+            display: block;
+        }
+        .publish-content a:hover{
+            background-color:whitesmoke ;
+        }
+        .publish:hover .publish-content{
+            display: block;
+        }
+        #signin{
+            /* height: fit-content; */
+            font-size: 14px;
+            color: white;
+            border: none;
+            background-color: transparent;
+        }
+        #searchbar{
+            text-align: center;
+            font-size: 22px;
+            /* border: 3px solid plum; */
+        }
+        #searchbar>input{
+            width: 45%;
+            font-size: 18px;
+            padding-left: 25px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+        }
+        /* ..................................................Navbar End................................................. */
+
+        /* ...............................................Both Sections Start........................................... */
+
+        #bothsection{
+            display: flex;
+            gap: 30px;
+            width: 80%;
+            margin: auto;
+            margin-top: 30px;
+        }
+        /* ..................................................Body Start................................................. */
+        #body{
+            width: 70%;
+            margin: auto;
+            
+        }
+        #poster>img{
+            width: 100%;
+            /* height: 600px; */
+        }
+        #contact{
+            display: flex;
+            justify-content: space-between;
+        }
+        .verified{
+            display: flex;
+            align-items: center;
+            /* border: 2px solid blue; */
+        }
+        .verified>img{
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+        #call{
+            display: flex;
+            align-items: center;
+        }
+        #call>img{
+            border-radius: 100%;
+            height: 30px;
+        }
+        #rating{
+            display: flex; 
+            align-items: center;
+            /* border: 2px solid red;   */
+            height: 22px;
+            width: 225px;  
+        }
+        #rating>img{
+            height: 20px;
+        }
+        #read{
+            color: rgb(27, 188, 252);
+        }
+        #price{
+            display: flex;
+            justify-content: space-between;
+            /* border: 2px solid red; */
+            align-items: center;
+            height: 30px;
+        }
+        #time{
+            padding:5px 7px 5px 7px;
+            color: white;
+            background-color: #01aa96
+        }
+        .keys{
+            color: rgb(110, 109, 109);
+        }
+        #high1{
+            width: 650px;
+            height: 20px;
+            align-items: center;  
+            display: flex;
+            justify-content: space-between;
+        }
+        #high2{
+            width: 600px;
+            height: 20px;
+            align-items: center;
+            margin-top: 15px;     
+            display: flex;
+            justify-content: space-between;
+        }
+        span{
+            font-weight: bold;
+        }
+        /* ..................................................Body End................................................... */
+        /* ..............................................Details Start.................................................. */
+        #details{
+            width: 30%;
+            height: 650px;
+            /* border: 2px solid red; */
+            text-align: center;
+            /* padding-left: 30px;
+            padding-right: 30px; */
+        }
+        #details>input{
+            width: 85%;
+            margin-bottom: 20px;
+            padding: 10px 0px 10px 15px;
+        }
+        #details>select{
+            width: 90%;
+            display: block;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px 0px 10px 10px;
+        }
+        #details>label{
+            display: block;
+            text-align: left;
+            margin: auto;
+            margin-left: 30px;
+        }
+        #amount{
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 30px;
+        }
+        #amount :first-child{
+            font-weight: bold;
+        }
+        #next{
+            background-color: rgb(24, 149, 198);
+            width: 95%;
+            margin: auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            color: white;
+            font-weight: bold;
+        }
+        /* ..............................................Details End.................................................. */
+
+        /* ...............................................Both Sections End............................................. */
+
+        /* .............................................Footer Start..................................................... */
+
+        #hr1{
+            margin-top: 20px;
+            margin-bottom: 30px;
+        }
+        #footer{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            gap: 50px;
+        }
+        #fsection1{
+            /* border: 2px solid blue; */
+            margin-left: 25px;
+        }
+        #fsection1>div{
+            display: flex;
+            margin: auto;
+            width: 100%;
+            /* border: 2px solid red; */
+            align-items: center;
+            
+        }
+        #fsection1>div>img{
+            width: 30%;
+            /* border: 2px solid green; */
+        }
+        #social{
+            width: 70%;
+            margin: auto;
+            display: block;
+        }
+        #google{
+            margin: auto;
+            display: block;
+            width: 50%;
+            /* border: 2px solid red;         */
+        }
+        #footer>div>h5{
+            color: rgb(59, 59, 59);
+        }
+        #hr2{
+            margin-bottom: 20px;
+        }
+        #copyright{ 
+            width: 15%;
+            /* border: 2px solid red; */
+            margin: auto;
+            margin-bottom: 80px;
+        }
+        /* .............................................Footer End....................................................... */
+
+        
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div id="uppertasks">
+            <div id="logo">
+                <img src="./images/World_Explorer.png" alt="LogoError">
+                <h2>World Explorer</h2>
+            </div>
+            <div id="navigationbtn">
+                <div class="inspiration">
+                    <button class="inspirationbtn">Inspirations</button>
+                    <div class="inspiration-content">
+                      <a href="#">Visit Singapore</a>
+                      <a href="#">Resorts World Sentosa</a>
+                      <a href="#">Beaches</a>
+                      <a href="#">Mountains</a>
+                      <a href="#">Heritage</a>
+                      <a href="#">Weekend Guide</a>
+                      <a href="#">Upcoming Festivals</a>
+                      <a href="#">Honeymoon Packages</a>
+                      <a href="#">Wildlife Tourism</a>
+                      <a href="#">Road Trips</a>
+                      <a href="#">Getaways Guide</a>
+                      <a href="#">Luxury Travel</a>
+                      <a href="#">Explore More</a>
+                    </div>
+                </div>
+                <a href="#">Forum</a>
+                <a href="#">Packages</a>
+                <div class="publish">
+                    <button class="publishbtn">Publish Trips</button>
+                    <div class="publish-content">
+                      <a href="#">Create New</a>
+                      <a href="#">Upload Photos/Videos</a>
+                      <a href="#">Import Blog</a>
+                    </div>
+                </div>
+                 
+                <a id="signin" href="./login.html">Sign in</a>           
+            </div>
+        </div>     
+    </div>
+    <div id="bothsection">
+        <div id="body">
+            <div id="poster">
+                <img src="https://cdn1.tripoto.com/media/filter/nxxl/img/2176903/Image/1660748843_img_9258.jpg" alt="PosterError">
+            </div>
+            <div id="info">
+                <h2>Hike to Gallu Waterfall & Discover the 'Joy of Doing Nothing'</h2>
+                <div id="contact">
+                    <div class="verified">
+                        <img src="https://cdn1.tripoto.com/media/filter/mss/img/2165009/UserPhoto/1628574904_tripoto_s_mindful_retreats.jpg" alt="Error">
+                        <h4>Tripoto's Mindful Retreats</h4>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzx6SHPr4N-65t9k4QyHWRXN_i2Tso2QKg_D-C-B_94w&s" alt="Error">
+                    </div>
+                    <div id="call">
+                        <img src="./images/calllogo.png" alt="">
+                        <h4>91-XXXXXXXXXX</h4>
+                    </div>
+                </div> 
+                <hr>
+                <div id="rating">
+                <h3>Rating: 4.5</h3> 
+                <img src="./images/4.5rating.jpg" alt="Error">  
+                </div>
+                <h4 id="read">Read 10 Reviews ></h4>   
+                <div id="price">
+                    <div id="time">5 Days - 4 Night</div>
+                    <div><h4>₹ 15,799 /person</h4></div>
+                </div> 
+                <h3 class="keys">Location :-</h3>
+                <h3>Himachal Pradesh</h3> 
+                <h3 class="keys">Highlights:-</h3>
+                <div id="high1">
+                    <h3>Meals</h3>
+                    <h3>Daily BreakFast</h3> 
+                    <h3>Sightseeing</h3>
+                    <h3>Homestay</h3>
+                    <h3> Hill Station</h3>                 
+                </div> 
+                <div id="high2">
+                    <h3>Nature</h3>
+                    <h3>Wellness</h3>
+                    <h3>Hidden Gem</h3>
+                    <h3>Activities Included</h3>
+                </div>
+            </div>
+            <hr>
+            <div id="overview">
+                <h2>Overview</h2>
+                <p>Get ready for an immersive experience of skiing at an off-beat destination located in the Barod village
+                    of Manali, surrounded by the giant upper Himalayan ranges. On this Mindful Retreat, unwind at the homestay
+                    located at the edge of beautiful apple orchards and overlooking the mighty Hampta Pass, offering 5 
+                    bedrooms, a small front yard, a gorgeous unrestricted terrace, and a cozy common room with plenty of 
+                    beautiful unrestricted views! Hike to the picture-perfect Barod Parsha waterfall, 15 minutes from the retreat, 
+                    and be greeted by the pine forests and undefined hiking trails all around. Come, and weave stories at this 
+                    winter wonderland!
+                </p>
+                <h3>Book now to avail free one-time rescheduling option. Let us know 72 hours ahead of the stay and pick 
+                    another date as per your convenience within the next three months.
+                </h3>
+                <h3>Experiences:</h3>
+                <ul>
+                    <li> Learn skiing  </li>  
+                    <li> Experience a hot spring bath</li>
+                    <li> Bonfire, music, and games</li>
+                    <li> Guided waterfall hik</li>
+                    <li> Lunch with the community</li>
+                </ul>
+                <h3>Stay and Host:</h3>
+                <ul>
+                    <li> Deluxe rooms on double occupancy basis @ Rs 15799 per pax</li>
+                    <li> Deluxe dorm beds @ Rs 13799 per pa</li>
+                    <li> The price includes stay, meals, and mentioned activitie</li>
+                    <li> Pets are not allowed at this retrea</li>
+                    <li> Piyali Kar who alternates with a volunteer, would be your host at the retreat and would love to show you a slice of this heaven on your travel journey.</li>
+                </ul>
+                <h3>For the activity, you will require:</h3>
+                <ul><li> Sunglasses are a must on sunny days in the snow. They can be lifesavers.</li>
+                    <li> Sunblock is compulsory to avoid sunburns.</li>
+                    <li> Emergency medicines</li>
+                    <li> Ample warm clothing for day to day including socks, headbands, and gloves.</li>
+                    <li> Hair Blow Dryer</li>
+                    <li> Personal water bottles for activity.</li>
+                    <li> The hot spring bath is a clean and mixed private bath, along with you, there will be all your ski batch mates. You can carry swimming trunks ans for it. Whatever you are comfortable with.</li>
+                    <li> Carry healthy snack food like dry fruits and Energy bars which can keep you fed during the activity</li>
+                </ul>
+                <h3>How to reach:</h3>
+                <ul>You can find ‘The Other Destination’ on google maps here. <br>
+
+                    <span> By Air:</span> Book a flight for Bhuntar (Kullu), followed by a drive of about 1 hour and 10 minutes to the destination. <br>
+                    <span>By Bus: </span>Book an overnight bus for Manali from Delhi or Chandigarh. Night buses drop off early in the morning at the Manali bus stand. Take a taxi to the property for about 500 INR. <br>
+                    <span>By Road:</span> Enjoy a scenic drive for about 11hrs of national highways to reach Manali. Cabs are available for Chandigarh (7hrs) or Delhi (11hrs). <br>
+                </ul>
+                <h3>Inclusions</h3>
+                <ul>
+                    <li>Travel to and from the ski destination .
+                   <li> All meals for all days of the retreat. </li>
+                   <li> Travel to the hot spring for a bath. </li>
+                </ul>
+                <h3>Exclusions</h3>
+
+                <ul>
+                    <li>Travel to and from the property for any other activity.</li>
+                    <li>Bonfires overnight apart from the one complimentary one. Bonfire can be provided on good weather days for a minimum of 300 INR additional cost. </li>
+                    <li>Heater in the rooms.</li>
+                    <li>Any additional snacks or beverages apart from the 3 fixed meals.</li>
+                </ul>
+
+            </div>
+        </div>
+        <div id="details">
+            <h3>Enter Your Details To Book</h3>
+            <input type="email" placeholder="Email">
+            <input type="text" placeholder="Full Name">
+            <input type="number" placeholder="Contact Number">
+            <input type="text" placeholder="Departure City">
+            <label for="">Adults:</label>
+            <select name="" id="">
+                <option value="">--Please choose an option--</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+            </select>
+            <label for="">Select Rooms:</label>
+            <select name="" id="">
+                <option value="">--Please choose an option--</option>
+                <option value="">Deluxe dorms x 2</option>
+                <option value="">Deluxe room x 1, Deluxe dorm x 1</option>
+                <option value="">Deluxe dorms x 3</option>
+                <option value="">Deluxe room x 1,Deluxe dorms x 2</option>
+                <option value="">Deluxe room x 2,Deluxe dorms x 1</option>
+                <option value="">Deluxe room x 3</option>
+            </select>
+            <input type="date">
+            <div id="amount">
+                <div>Amount:</div>
+                <div>Starting from ₹ 7,430 </div>
+            </div>
+            <div id="next">Next</div>
+        </div>
+    </div>
+    <hr id="hr1">
+    <div id="footer">
+        <div id="fsection1">
+            <div>
+                <img src="./images/World_Explorer.png" alt="Error">
+                <h3>World Explorer</h3>
+            </div>
+            <h5>India's Largest Travel Community</h5>
+            <hr>
+            <img id="social" src="./images/social.png" alt="Error">
+            <img id="google" src="./images/google play.png" alt="Error">
+        </div>
+        <div id="fsection2">
+           <h3>About Tripoto</h3>
+           <h5>How It Works</h5>
+           <h5>FAQ's</h5>
+           <h5>Privacy Policy</h5>
+           <h5>Terms & Conditions</h5>
+           <h5>Careers</h5>
+           <h5>Contact Us</h5> 
+        </div>
+        <div id="fsection3">
+            <h3>Products</h3>
+            <h5>Tour Packages</h5>
+            <h5>Travel Guides</h5>
+            <h5>Trips & Itineraries</h5>
+            <h5>Weekend Getaways</h5>
+            <h5>Places to Visit</h5>
+            <h5>Other Travel Categories</h5>
+            <h5>Tripoto Forum</h5>
+            <h5>Honeymoon Packages</h5>
+        </div>
+        <div id="fsection4">
+            <h3>Important Travel Links</h3>
+            <h5>Goa Tourism</h5>
+            <h5>Dubai Tourism</h5>
+            <h5>Singapore Tourism</h5>
+            <h5>Kerala Tourism</h5>
+            <h5>Manali Tourism</h5>
+            <h5>Bali Tourism</h5>
+            <h5>Sri Lanka Tourism</h5>
+            <h5>Honeymoon Destinations In India</h5>
+        </div>
+        <div id="fsection5">
+            <h3>Partner Programs</h3>
+            <h5>Buy Travel Leads</h5>
+            <h5>Partner With Us</h5>
+            <h5>Earn Credits</h5>
+            <h5>Get Paid To Travel</h5>
+            <h5>Import Blog To Itinerary</h5>
+        </div>
+    </div>
+    <hr id="hr2">
+    <h5 id="copyright">© All rights reserved</h5>
+    
+</body>
+</html>
